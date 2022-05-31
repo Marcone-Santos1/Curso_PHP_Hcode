@@ -4,7 +4,7 @@
 
 require "exemplo-1.php";
 
-$resultado = somar(5, 29);
+$resultado = somar(5, 2);
 
 echo $resultado;
 
