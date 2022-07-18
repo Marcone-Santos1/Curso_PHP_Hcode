@@ -8,7 +8,11 @@ if(isset($_POST['Email']) || isset($_POST['password'])){
         echo "<p style=\"color: red;\">Preencha seu Email...</p>";
     } else if (strlen($_POST['password']) == 0) {
         echo "<p style=\"color: red;\">Preencha sua senha...</p>";
+<<<<<<< HEAD
     } else {
+=======
+    } else {        
+>>>>>>> bf154fa05ca72fc5872004436a579f8a33eb731c
         $email = $mysqli->real_escape_string($_POST['Email']);
         $password = $mysqli->real_escape_string($_POST['password']);
 
