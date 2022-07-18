@@ -1,0 +1,15 @@
+{
+    "name": "ms580/composer",
+    "description": "Aula de PHP7",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Marcone-Santos1",
+            "email": "marconemagalhaes203@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.1.*"
+    }
+}
