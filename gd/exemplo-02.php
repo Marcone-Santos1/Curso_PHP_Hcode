@@ -12,6 +12,6 @@ imagestring($image, 5 , 440, 350, "Marcone Magalhães", $titleColor);
 imagestring($image, 3 , 450, 370, "Concluído em:".date("d/m/Y"), $titleColor);
 
 header("Content-Type: image/jpg");
-imagejpeg($image);
+imagejpeg($image, "Certificado".date("d/m/Y").".jpg");
 
 imagedestroy($image);
