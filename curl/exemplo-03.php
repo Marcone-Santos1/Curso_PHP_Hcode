@@ -43,7 +43,7 @@ if (!empty($_POST['cep'])) {
 		?>
 
 		
-		<form action="POST">
+		<form>
 			<label>RUA</label>
 			<input type="CEP" name="cep" value="<?php print_r($data['logradouro']) ?>" readonly>
 			<label>BAIRRO</label>
@@ -60,7 +60,7 @@ if (!empty($_POST['cep'])) {
 
 } else {
 
-	echo "Insira um valor";
+	echo "Insira um CEP";
 
 }
 
