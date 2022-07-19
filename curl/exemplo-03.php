@@ -40,28 +40,35 @@ if (!empty($_POST['cep'])) {
 	
 		$data = json_decode($response, true);
 
+		if ($data == true)
+		{
+
 		?>
 
 		
-		<form>
-			<label>RUA</label>
-			<input type="CEP" name="cep" value="<?php print_r($data['logradouro']) ?>" readonly>
-			<label>BAIRRO</label>
-			<input type="CEP" name="cep" value="<?php print_r($data['bairro']) ?>" readonly>
-			<label>CIDADE</label>
-			<input type="CEP" name="cep" value="<?php print_r($data['localidade']) ?>" readonly>
-			<label>ESTADO</label>
-			<input type="CEP" name="cep" value="<?php print_r($data['uf']) ?>" readonly>
-		</form>
+			<form>
+				<label>RUA</label>
+				<input type="CEP" name="cep" value="<?php print_r($data['logradouro']) ?>" readonly>
+				<label>BAIRRO</label>
+				<input type="CEP" name="cep" value="<?php print_r($data['bairro']) ?>" readonly>
+				<label>CIDADE</label>
+				<input type="CEP" name="cep" value="<?php print_r($data['localidade']) ?>" readonly>
+				<label>ESTADO</label>
+				<input type="CEP" name="cep" value="<?php print_r($data['uf']) ?>" readonly>
+			</form>
 
 		<?php
 
-	}
+		} else {
+
+			echo "CEP inválido...";
+		
+		}
+
+	} 
 
 } else {
-
 	echo "Insira um CEP";
-
 }
 
 ?>
