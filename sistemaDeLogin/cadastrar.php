@@ -22,10 +22,10 @@ if(isset ($_POST['Nome']) || isset($_POST['Email']) || isset($_POST['password'])
         $sql_code = "INSERT INTO teste(nome, email, senha) VALUES ('$nome', '$email', '$password')";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ". $mysqli->error); 
 
-        $_SESSION['id'] = $usuario['id'];
-        $_SESSION['name'] = $usuario['nome'];
+        header("Location: index.php"); 
 
-        header("Location: index.php");      
+        $_SESSION['id'] = $usuario['id'];
+        $_SESSION['nome'] = $usuario['nome'];     
     }
 
 } 

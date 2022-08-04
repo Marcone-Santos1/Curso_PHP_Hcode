@@ -1,9 +1,9 @@
 <?php
 
-$usuario = 'dbdcmarcone';
-$senha = '4dn#N@%QEY9M';
-$database = 'Lab_Marcone';
-$host = 'database-dalacode.cradkmcvxrj4.sa-east-1.rds.amazonaws.com';
+$usuario = ;
+$senha = ;
+$database = ;
+$host = ;
 
 $mysqli = new mysqli($host, $usuario, $senha, $database);
 
