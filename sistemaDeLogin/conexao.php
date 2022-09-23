@@ -1,9 +1,9 @@
 <?php
 
-$usuario = ;
-$senha = ;
-$database = ;
-$host = ;
+$usuario = '';
+$senha = '';
+$database = '';
+$host = '';
 
 $mysqli = new mysqli($host, $usuario, $senha, $database);
 
